@@ -57,7 +57,7 @@ $(function() {
     $.ajax({
       url: '/api/login',
       method: 'POST',
-      // 快速获取表单中的数据
+      // 快速获取表单中的数据(进行传输)
       data: $(this).serialize(),
       success: function(res) {
         if (res.status !== 0) {
